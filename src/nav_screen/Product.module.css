@@ -1,0 +1,171 @@
+.Container{
+    text-align: center;
+ } 
+ form{
+    margin: 10px;
+ }
+.productselect{
+    width: 500px;
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+}
+b{
+    margin-left: 20px;
+}
+.CapitalStaff{
+    margin-left: 10px;
+    width: 210px;
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+}
+.poliInput{
+    padding: 5px;
+    display: flex;
+    width: 400px;
+    border-radius: 7px;
+}
+.insureinput{
+    padding: 5px;
+    display: flex;
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+.dateInput{
+    display: flex;
+    margin-left: 20px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.sexSelect{
+    display: flex;
+    margin-left: 20px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.paymentSelect{
+    width: 720px;
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+}
+.policyTermSelect{
+    width: 620px;
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.SumSelect{
+    width: 720px;
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+}
+.buttonEvaluate{
+    border: none;
+    background-color: rgba(0, 128, 0, 0.648);
+    border-radius: 10px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 120px;
+    padding: 10px;
+}
+ul{
+    color: rgba(0, 0, 255, 0.703);
+    background-color: #f2f2f2;
+    display: flex;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+}
+li{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+li:nth-child(3){
+    color: rgba(0, 0, 0, 0.668);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/*
+ul{
+    background-color: #f2f2f2;
+    color: rgb(0, 106, 255);
+    display: flex;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+li{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+li:nth-child(3){
+    color: rgba(0, 0, 0, 0.795);
+}
+select{
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    float: left;
+    width:500px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.64);
+    margin-left: 10px;
+}
+select:nth-child(3){
+    width: 250px;
+}
+label>b{
+    margin-left:10px;
+}
+input{
+    padding: 5px;
+    margin-left: 10px;
+    width: 500px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.405);
+}
+input:nth-child(3){
+    width: 250px;
+}
+label>input{
+    width: 250px;
+}
+label>select{
+    width: 250px;
+} */
