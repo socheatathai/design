@@ -1,39 +1,85 @@
 import Styles from "./Product.module.css";
 import { useState } from "react";
 const Product = () => {
-  // const [productName, setProductName] = useState("");
-  // const [capitalStaff, setCapitalStaff] = useState("");
-  // const [name, setName] = useState("");
-  // const [paid, setPaid] = useState("");
-  // const [sum, setSum] = useState("");
-  // const [date, setDate] = useState("");
-  // const [sex, setSex] = useState("");
-  // const [policyTerm, setPolicyTerm] = useState("");
-  // const [rider, setRider] = useState("");
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   console.log("Form submitted!");
-  //   console.log("Product Name: ", productName);
-  //   console.log("Capital Staff: ", capitalStaff);
-  //   console.log("Name: ", name);
-  //   console.log("Paid: ", paid);
-  //   console.log("Sum: ", sum);
-  //   console.log("Date: ", date);
-  //   console.log("Sex: ", sex);
-  //   console.log("Policy Term: ", policyTerm);
-  //   console.log("Rider: ", rider);
-  // };
+  const [handle, setHandle] = useState();
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    setHandle(!handle)
+  }
   return (
     <>
+
     <div className={Styles.navBar}>
       <ul>
         <li>Home /</li>
         <li>Sales /</li>
         <li>Product illustration</li>
       </ul>
-
     </div>
+    <>
+    { handle === true ? <div  className={Styles.ProductIllutionForm}  >
+      <h1>Product illustration</h1> 
+      <form action="" className={Styles.showAnswer}>
+       <div className={Styles.formLeft}>
+         <label className={Styles.labelOne} htmlFor="">Basic Product :</label>
+         <label className={Styles.labelTwo} htmlFor="">Rider :</label>
+       </div>
+       <div className={Styles.formRight}>
+       <div className={Styles.rowFormLeft}>
+       <div>
+          <b>modal premium</b>
+          <input value={"427.9"} className={Styles.modalInput} type="number" name="" id="" />
+        </div>
+        <div>
+          <b>Annual Premium</b>
+          <input value={"427.9"}  className={Styles.modalInput} type="number" name="" id="" /> 
+        </div>
+        <div>
+          <b>Af Disc. Annual Premium</b>
+          <input value={"427.9"}  className={Styles.modalInput} type="number" name="" id="" />
+        </div> 
+       </div>
+       <div className={Styles.rowFormLeft}>
+       <div>
+          <b>Modal Premium Rider</b>
+          <input value={"7.7"} className={Styles.modalInput} type="number" name="" id="" />
+        </div>
+        <div>
+          <b>Annual Premium Rider</b>
+          <input value={"7.7"}  className={Styles.modalInput} type="number" name="" id="" /> 
+        </div>
+        <div>
+          <b>Af Disc. Annual Premium Rider</b>
+          <input value={"7.7"}  className={Styles.modalInput} type="number" name="" id="" />
+        </div>
+       </div>
+       <div style={{padding:'18px'}} className={Styles.rowFormLeft}>
+        
+       <div>
+       <hr />
+          <b>TOTAL MODAL PREM</b>
+          <input value={"435.60"} className={Styles.modalInput} type="number" name="" id="" />
+        </div>
+        <div>
+        <hr />
+          <b>TOTAL ANN. PREM</b>
+          <input value={"435.60"}  className={Styles.modalInput} type="number" name="" id="" /> 
+        </div>
+        <div>
+        <hr />
+          <b>TOTAL PR. AF.DISC</b>
+          <input value={"435.60"}  className={Styles.modalInput} type="number" name="" id="" />
+        </div>
+       </div>
+      </div>
+      </form>
+     </div> : <div>
+            {/* this line is hide */}
+     </div>
+
+    }
+    </>
       <form>
         <label>
           <b>Product Name :</b>
@@ -45,7 +91,7 @@ const Product = () => {
           </select>
         </label>
         <label>
-           <b>Phillip Capital Staff :</b> 
+           <b style={{marginLeft:'10px'}}>Phillip Capital Staff :</b> 
           <select className={Styles.CapitalStaff} name="" id="">
             <option value="">product one</option>
             <option value="">product one</option>
@@ -58,15 +104,15 @@ const Product = () => {
           <input className={Styles.poliInput} type="text" placeholder="Full Name" />
         </label>
         <label htmlFor="">
-          <b>Insured (Full Name)</b>
+          <b style={{marginLeft:'20px'}}>Insured (Full Name)</b>
           <input className={Styles.insureinput} type="text" placeholder="Full Name" />
         </label>
         <label htmlFor="">
-          <b>date of birth</b>
+          <b style={{marginLeft:'20px'}}>date of birth</b>
           <input className={Styles.dateInput} type="date" name="" id="" />
         </label>
         <label>
-           <b>Sex:</b> 
+           <b style={{marginLeft:'20px'}}>Sex:</b> 
           <select className={Styles.sexSelect} name="" id="">
             <option value="">male</option>
             <option value="">female</option>
@@ -80,7 +126,7 @@ const Product = () => {
           </select>
         </label>
         <label htmlFor="">
-          <b>Policy Term</b>
+          <b style={{marginLeft:'20px'}}>Policy Term</b>
           <select className={Styles.policyTermSelect} name="" id="">
             <option value="1">annually</option>
             <option value="1">annually</option>
@@ -91,13 +137,13 @@ const Product = () => {
           <input className={Styles.SumSelect} type="text" placeholder="10000" />
         </label>
         <label htmlFor="">
-          <b>Rider</b>
+          <b style={{marginLeft:'20px'}}>Rider</b>
           <select className={Styles.policyTermSelect} name="" id="">
             <option value="1">select...</option>
             <option value="1">annually</option>
           </select>
         </label> <br />
-        <button className={Styles.buttonEvaluate} >Evaluate</button>
+        <button onClick={handleSubmit} className={Styles.buttonEvaluate} >Evaluate</button>
         
 
         
